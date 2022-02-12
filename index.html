@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Valor da ação JS3</h1>
+  <h2 id="valor">R$ </h2>
+
+  <script src="https://cdn.socket.io/4.4.0/socket.io.min.js"></script>
+
+  <script>
+    var socket = io('ws://127.0.0.1:8080')
+
+    var elemento = document.querySelector('#valor')
+
+    // socket.on('cotacao',  valor => {
+    //   elemento.textContent = valor;
+    // })
+  </script>
+</body>
+</html>
